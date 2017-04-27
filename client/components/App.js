@@ -8,8 +8,10 @@ export default class App extends Component {
 		<div className ="container">
 			<NavBar />
 			{this.props.children}
+			
+					
+			</div>
 
-		</div>
 
 		);
 	}

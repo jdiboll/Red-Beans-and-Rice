@@ -1,15 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
-import {  HashRouter as Router, Route, IndexRoute } from 'react-router-dom';
+import {  BrowserRouter as Router, Route, Link } from 'react-router-dom';
 //import Routes from './routes';
+//import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './components/App';
-import Starter from './components/Starter';
+//import Starter from './components/Starter';
+import Signup from './components/signup';
 
 
 
 render((
 	<Router> 
-	<Route path="/" component={App} />
+	<div>
+		<Route path="/" component={App} />
+		<Route exact component={Signup} />
+		</div>
 	</Router>
 	), document.getElementById('app'));
 
