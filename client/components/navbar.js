@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default () => {
@@ -7,11 +8,11 @@ export default () => {
 	<nav className="navbar navbar-default navbar-fixed-top">
 	  <div className="container-fluid">
 	  	<div className="navbar-header">
-	  		<a className="navbar-brand" href="#">Espresso</a>
+	  	<Link to="/" className="navbar-brand">Expresso</Link>
 	  	</div>
 	  	<div className="collapse-navbar-collapse">
 	  		<ul className="nav navbar-nav navbar-right">
-	  			<li><a href="#">Sign In</a></li>
+	  			<li><Link to="/signup">Sign In</Link></li>
 	  		</ul>
 	  	</div>
 	  </div>

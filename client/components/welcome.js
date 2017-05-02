@@ -1,0 +1,17 @@
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+
+
+export default class Welcome extends Component {
+	render() {
+
+	return (
+		<div className ="container">
+			<div className="jumbotron">
+				<h3>Welcome</h3>
+			</div>
+		</div>
+
+		);
+	}
+}
