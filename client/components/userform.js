@@ -12,14 +12,24 @@ export default class Userform extends Component {
 		}
 
 		this.onChange= this.onChange.bind(this);
+		this.onSubmit= this.onSubmit.bind(this);
 
 		}
+		
 		onChange(e) {
 			this.setState({ [e.target.name]: e.target.value});
 	}
+		onSubmit(e) {
+			e.preventDefault();
+			console.log(this.state);
+		}
+
+
+
+
 	render() {
 		return (
-			<form>
+			<form onSubmit={this.onSubmit}>
 			<h2>Join the Game!</h2>
 
 			<div className="form-group">
